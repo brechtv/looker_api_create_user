@@ -1,8 +1,8 @@
-# Basic example
+<h1>Basic example</h1>
 
 This contains a basic example workflow for creating users in Looker through the API in Python.
 
-## Workflow
+<h2>Workflow</h2>
 
 * Check if the user already exists
 * If not, create a new empty user (POST /api/3.0/users)
@@ -12,7 +12,7 @@ This contains a basic example workflow for creating users in Looker through the 
 * Construct the "setup" URL so the new user can set up their account (https://customer.looker.com/account/setup/' + reset_token)
 
 
-
+<h2>Script</h2>
 ```python
 import requests, json, logging, time, urllib
 import pandas as pd
@@ -112,8 +112,8 @@ email = 'brechto2@looker.com'
 looker.create_new_user(first_name, last_name, email)
 ```
 
-    https://dcleu.eu.looker.com:19999/login
-    Token: sRtZDQpHHrZdNzSPSD3HxjpmTBY4262pkYPcDS98
+    https://x.looker.com:19999/login
+    Token: xyz
 
 
 
